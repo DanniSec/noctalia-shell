@@ -451,7 +451,8 @@
     "week": "Week",
     "widgets": "Widgets",
     "width": "Width",
-    "yes": "Yes"
+    "yes": "Yes",
+    "address-copied": "Address copied to clipboard."
   },
   "control-center": {
     "power-profile": {

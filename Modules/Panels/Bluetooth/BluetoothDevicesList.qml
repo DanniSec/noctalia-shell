@@ -459,7 +459,7 @@ NBox {
                       if (addr.length > 0) {
                         // Copy to clipboard via wl-copy (runtime dependency)
                         Quickshell.execDetached(["wl-copy", addr]);
-                        ToastService.showNotice(I18n.tr("common.bluetooth"), I18n.tr("toast.bluetooth.address-copied"), "bluetooth");
+                        ToastService.showNotice(I18n.tr("common.bluetooth"), I18n.tr("common.address-copied"), "bluetooth");
                       }
                     }
                   }

@@ -18,6 +18,7 @@ Singleton {
   property bool app2unitAvailable: false
   property bool gnomeCalendarAvailable: false
   property bool wtypeAvailable: false
+  property bool rfkillAvailable: false
 
   // Programs to check - maps property names to commands
   readonly property var programsToCheck: ({
@@ -27,7 +28,8 @@ Singleton {
                                             "wlsunsetAvailable": ["sh", "-c", "command -v wlsunset"],
                                             "app2unitAvailable": ["sh", "-c", "command -v app2unit"],
                                             "gnomeCalendarAvailable": ["sh", "-c", "command -v gnome-calendar"],
-                                            "wtypeAvailable": ["sh", "-c", "command -v wtype"]
+                                            "wtypeAvailable": ["sh", "-c", "command -v wtype"],
+                                            "rfkillAvailable": ["sh", "-c", "command -v rfkill"]
                                           })
 
   // Discord client auto-detection

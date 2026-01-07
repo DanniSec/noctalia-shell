@@ -121,7 +121,7 @@ SmartPanel {
 
   panelContent: Rectangle {
     color: "transparent"
-    
+
     property real contentPreferredHeight: Math.min(root.preferredHeight, mainColumn.implicitHeight + Style.marginL * 2)
 
     ColumnLayout {
@@ -299,7 +299,7 @@ SmartPanel {
                 anchors.fill: parent
                 anchors.margins: Style.marginM
                 spacing: Style.marginL
-                
+
                 Item {
                   Layout.fillHeight: true
                 }
@@ -491,7 +491,7 @@ SmartPanel {
                   anchors.fill: parent
                   anchors.margins: Style.marginM
                   spacing: Style.marginL
-                  
+
                   Item {
                     Layout.fillHeight: true
                   }
@@ -717,7 +717,7 @@ SmartPanel {
                                   const value = (NetworkService.activeEthernetDetails.ifname && NetworkService.activeEthernetDetails.ifname.length > 0) ? NetworkService.activeEthernetDetails.ifname : (NetworkService.activeEthernetIf || "");
                                   if (value.length > 0) {
                                     Quickshell.execDetached(["wl-copy", value]);
-                                    ToastService.showNotice(I18n.tr("control-center.wifi.label-ethernet"), I18n.tr("toast.bluetooth.address-copied"), "ethernet");
+                                    ToastService.showNotice(I18n.tr("control-center.wifi.label-ethernet"), I18n.tr("common.address-copied"), "ethernet");
                                   }
                                 }
                               }
@@ -824,7 +824,7 @@ SmartPanel {
                                   const value = NetworkService.activeEthernetDetails.ipv4 || "";
                                   if (value.length > 0) {
                                     Quickshell.execDetached(["wl-copy", value]);
-                                    ToastService.showNotice(I18n.tr("control-center.wifi.label-ethernet"), I18n.tr("toast.bluetooth.address-copied"), "ethernet");
+                                    ToastService.showNotice(I18n.tr("control-center.wifi.label-ethernet"), I18n.tr("common.address-copied"), "ethernet");
                                   }
                                 }
                               }
